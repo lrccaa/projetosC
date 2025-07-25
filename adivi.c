@@ -59,7 +59,7 @@ int main()
         else if (chute == nsec)
         {
             printf("Parabens voce acertou em %d tentativas e ficou com %.2lf pontos !!!\n", tentativa, pontos);
-            printf ("Voce e um otimo jogador!!!");
+            printf ("Voce e um otimo jogador!!!\n");
             printf("   *****   \n");
             printf(" *       * \n");
             printf("*  O   O  *\n");
@@ -85,7 +85,7 @@ int main()
         }
         pontos = pontos - fabs(chute - nsec)/2.0;
     }
-    if (ganhou = 0)
+    if (ganhou == 0)
     {
         printf("PPPP   EEEEE  RRRR   DDDD   EEEEE  U   U\n");
         printf("P   P  E      R   R  D   D  E      U   U\n");
@@ -93,7 +93,9 @@ int main()
         printf("P      E      R R    D   D  E      U   U\n");
         printf("P      EEEEE  R  RR  DDDD   EEEEE   UUU \n");
     
-        printf ("O jogo acabou tente mais uma vez!!!");    
+        printf ("O jogo acabou tente mais uma vez!!!\n");
+        printf ("O numero secreto era: %d.", nsec);    
     }
+    return 0;
 }   
 
