@@ -201,6 +201,7 @@ int main()
     }
     else
     {
+        printf ("A palavra era %s.\n", palavrasecreta);
         printf ("Infelizmente voce perdeu!!!\n\n");
         printf(     "X       X\n");
         printf(     " X     X \n");
